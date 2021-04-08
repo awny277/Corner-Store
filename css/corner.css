@@ -421,7 +421,7 @@ html{
 @media (min-width:0) and (max-width:767px) {
     .servies .image {
         width: 74%;
-        top: 1130px;
+        top: 921px;
         right: 10px;
     }
 }
@@ -532,6 +532,7 @@ html{
 }
 @media (min-width: 0) and (max-width: 767px){
     .servise-info h1 {
+        width: 300px;
         color: var(--heading4-color);
     }
     .servise-info::before {
@@ -676,7 +677,7 @@ html{
 }
 @media ( max-width :991px) {
     .galary .container > h1 {
-        font-size: 30px;
+        font-size: 28px;
         margin-bottom: 30px;
     }
     .galary .container {
