@@ -234,6 +234,40 @@ html{
     margin-top: 6px;
     display: block;
     background-color: black;
+    animation-name: moving;
+}
+.landing .nav .links .icon span:nth-of-type(2){
+    animation-name: moving2;
+}
+.landing .nav .links:hover .icon span {
+    animation-play-state: running;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes moving
+{
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 60%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes moving2 
+{
+    0% {
+        width: 60%;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 60%;
+    }
 }
 .landing .nav .links .icon span:nth-of-type(2)
 {
@@ -387,7 +421,7 @@ html{
 @media (min-width:0) and (max-width:767px) {
     .servies .image {
         width: 74%;
-        top: 80%;
+        top: 1131px;
         right: 10px;
     }
 }
@@ -734,6 +768,10 @@ html{
     grid-gap: 20px 50px ;
 }
 @media (min-width:0) and (max-width :991px) {
+    .writers .container > h1 {
+        font-size: 25px;
+        margin-bottom: 56px;
+    }
     .writers .container .writers-info {
         grid-gap: 40px 10px ;
     }
@@ -873,6 +911,7 @@ html{
 .popular .container .row .col-1 > div {
     width: 350px;
     height: 110px;
+    justify-content: space-around;
 }
 .popular .container .row .col-1 > div img {
     width: 100px;
@@ -889,6 +928,11 @@ html{
 .popular .container .row .col-1 p {
     color: var(--pargrahp-color);
     line-height: 1.6;
+}
+@media (max-width:767px) {
+    .popular .container .row .col-1 > div h2 {
+        font-size: 22px;
+    }
 }
 /*      end popular         */
 
@@ -1142,19 +1186,26 @@ html{
     top: 90vh;
     text-align: right;
     margin-right: 20px;
-}
-@media (max-width:991px) {
-    .up {
-        padding-top: 46px;
-        top: 85vh;
-    }
+    z-index: 999
 }
 .up a {
     padding: 30px 15px 15px;
-    background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+    background-color: #9A9AC4;
 }
 .up a i {
     font-size: 40px;
     color: var(--section-background);
+}
+@media (max-width:991px) {
+    .up {
+        padding-top: 46px;
+        top: 82vh;
+    }
+    .up a {
+        padding: 16px 12px 10px;
+    }
+    .up a i {
+        font-size: 27px;
+    }
 }
 /*      end up          */
