@@ -421,7 +421,7 @@ html{
 @media (min-width:0) and (max-width:767px) {
     .servies .image {
         width: 74%;
-        top: 921px;
+        top: 1128px;
         right: 10px;
     }
 }
@@ -532,7 +532,6 @@ html{
 }
 @media (min-width: 0) and (max-width: 767px){
     .servise-info h1 {
-        width: 300px;
         color: var(--heading4-color);
     }
     .servise-info::before {
@@ -1203,7 +1202,7 @@ html{
 @media (max-width:991px) {
     .up {
         padding-top: 46px;
-        top: 82vh;
+        top: 80vh;
     }
     .up a {
         padding: 16px 12px 10px;
